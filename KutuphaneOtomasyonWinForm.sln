@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneOtomasyonWinForm", "KutuphaneOtomasyonWinForm\KutuphaneOtomasyonWinForm.csproj", "{89CB2D89-8263-4274-8AAF-52301E5DA4FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89CB2D89-8263-4274-8AAF-52301E5DA4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CB2D89-8263-4274-8AAF-52301E5DA4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CB2D89-8263-4274-8AAF-52301E5DA4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CB2D89-8263-4274-8AAF-52301E5DA4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8914BF3-36C4-4E66-A7F9-270D1BB4F509}
+	EndGlobalSection
+EndGlobal
