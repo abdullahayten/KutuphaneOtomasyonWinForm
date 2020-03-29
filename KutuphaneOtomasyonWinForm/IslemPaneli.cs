@@ -51,5 +51,12 @@ namespace KutuphaneOtomasyonWinForm
             ekleForm.MdiParent = this;
             ekleForm.Show();
         }
+
+        private void silKullanicibtn_Click(object sender, EventArgs e)
+        {
+            KullaniciSilForm kSil=new KullaniciSilForm();
+            kSil.MdiParent = this;
+            kSil.Show();
+        }
     }
 }

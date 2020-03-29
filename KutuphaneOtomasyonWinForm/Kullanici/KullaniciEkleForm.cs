@@ -34,10 +34,6 @@ namespace KutuphaneOtomasyonWinForm.Kullanici
             {
                 kullanicilar.kullanici_cinsiyet = "K";
             }
-            //else
-            //{
-            //    MessageBox.Show("Lütfen Cinsiyet Seçiniz!!!");
-            //}
             db.Kullanicilar.Add(kullanicilar);
             db.SaveChanges();
             Listele();
