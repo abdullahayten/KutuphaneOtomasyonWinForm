@@ -33,6 +33,9 @@ namespace KutuphaneOtomasyonWinForm
             else
             {
                 MessageBox.Show("Başarılı");
+                IslemPaneli panel = new IslemPaneli();
+                panel.Show();
+                this.Hide();
             }
         }
     }
