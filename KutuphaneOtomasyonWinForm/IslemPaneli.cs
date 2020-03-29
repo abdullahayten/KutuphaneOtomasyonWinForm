@@ -22,7 +22,6 @@ namespace KutuphaneOtomasyonWinForm
             ekleKullanicibtn.Visible = false;
             guncelleKullanicibtn.Visible = false;
             silKullanicibtn.Visible = false;
-            dataGridView1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,10 +39,14 @@ namespace KutuphaneOtomasyonWinForm
                 silKullanicibtn.Visible = false;
             }
 
-            dataGridView1.Visible = true;
+            KullaniciListeForm klisteForm=new KullaniciListeForm();
+            klisteForm.MdiParent = this;
+            klisteForm.Show();
+        }
 
-            var kullanicilar = db.Kullanicilar.ToList();
-            dataGridView1.DataSource = kullanicilar.ToList();
+        private void ekleKullanicibtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

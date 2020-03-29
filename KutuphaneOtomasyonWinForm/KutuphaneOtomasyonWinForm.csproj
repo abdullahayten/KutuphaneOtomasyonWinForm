@@ -70,6 +70,12 @@
     <Compile Include="Kullanicilar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciListeForm.Designer.cs">
+      <DependentUpon>KullaniciListeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IslemPaneli.resx">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciListeForm.resx">
+      <DependentUpon>KullaniciListeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

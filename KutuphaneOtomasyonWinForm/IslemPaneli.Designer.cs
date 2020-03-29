@@ -35,9 +35,7 @@
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.kullaniciBilgiPanel = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,6 +95,7 @@
             this.ekleKullanicibtn.TabIndex = 1;
             this.ekleKullanicibtn.Text = "Ekle";
             this.ekleKullanicibtn.UseVisualStyleBackColor = false;
+            this.ekleKullanicibtn.Click += new System.EventHandler(this.ekleKullanicibtn_Click);
             // 
             // button1
             // 
@@ -124,29 +123,18 @@
             this.kullaniciBilgiPanel.Size = new System.Drawing.Size(1024, 47);
             this.kullaniciBilgiPanel.TabIndex = 1;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(311, 203);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(904, 456);
-            this.dataGridView1.TabIndex = 2;
-            // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 739);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.kullaniciBilgiPanel);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "IslemPaneli";
             this.Text = "IslemPaneli";
             this.Load += new System.EventHandler(this.IslemPaneli_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,6 +147,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel kullaniciBilgiPanel;
         private System.Windows.Forms.Button silKullanicibtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
