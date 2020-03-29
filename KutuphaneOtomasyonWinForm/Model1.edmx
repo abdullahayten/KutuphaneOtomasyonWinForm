@@ -16,6 +16,7 @@
           <Property Name="kullanici_mail" Type="nvarchar" MaxLength="50" />
           <Property Name="kullanici_tel" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_ceza" Type="float" />
+          <Property Name="kullanici_cinsiyet" Type="nvarchar" MaxLength="1" />
         </EntityType>
         <EntityType Name="Personeller">
           <Key>
@@ -66,6 +67,7 @@
           <Property Name="kullanici_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_ceza" Type="Double" />
+          <Property Name="kullanici_cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -90,6 +92,7 @@
           <EntitySetMapping Name="Kullanicilar">
             <EntityTypeMapping TypeName="KutuphaneOtomasyonModel.Kullanicilar">
               <MappingFragment StoreEntitySet="Kullanicilar">
+                <ScalarProperty Name="kullanici_cinsiyet" ColumnName="kullanici_cinsiyet" />
                 <ScalarProperty Name="kullanici_ceza" ColumnName="kullanici_ceza" />
                 <ScalarProperty Name="kullanici_tel" ColumnName="kullanici_tel" />
                 <ScalarProperty Name="kullanici_mail" ColumnName="kullanici_mail" />

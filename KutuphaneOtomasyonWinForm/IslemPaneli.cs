@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KutuphaneOtomasyonWinForm.Kullanici;
 
 namespace KutuphaneOtomasyonWinForm
 {
@@ -46,7 +47,9 @@ namespace KutuphaneOtomasyonWinForm
 
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
         {
-
+            KullaniciEkleForm ekleForm=new KullaniciEkleForm();
+            ekleForm.MdiParent = this;
+            ekleForm.Show();
         }
     }
 }
