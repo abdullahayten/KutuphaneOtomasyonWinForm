@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KutuphaneOtomasyonWinForm.Kayit;
 using KutuphaneOtomasyonWinForm.Kaynak;
 using KutuphaneOtomasyonWinForm.Kullanici;
 
@@ -112,6 +113,13 @@ namespace KutuphaneOtomasyonWinForm
             KaynakGuncelleForm kGuncel=new KaynakGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OduncForm odunc=new OduncForm();
+            odunc.MdiParent = this;
+            odunc.Show();
         }
     }
 }

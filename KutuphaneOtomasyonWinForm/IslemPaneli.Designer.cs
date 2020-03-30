@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IslemPaneli));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.silKaynakbtn = new System.Windows.Forms.Button();
             this.guncelleKaynakbtn = new System.Windows.Forms.Button();
             this.ekleKaynakbtn = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.kullaniciBilgiPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 760);
             this.panel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 500);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(240, 70);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "              Ödünç Ver";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // silKaynakbtn
             // 
@@ -200,22 +217,6 @@
             this.kullaniciBilgiPanel.Name = "kullaniciBilgiPanel";
             this.kullaniciBilgiPanel.Size = new System.Drawing.Size(1024, 47);
             this.kullaniciBilgiPanel.TabIndex = 1;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 500);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 70);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "              Ödünç Ver";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // IslemPaneli
             // 
