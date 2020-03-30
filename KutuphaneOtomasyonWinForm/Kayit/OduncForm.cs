@@ -72,6 +72,7 @@ namespace KutuphaneOtomasyonWinForm.Kayit
             yeniKayit.kullanici_id = secilenKisi.kullanici_id;
             yeniKayit.alis_tarih=DateTime.Today;
             yeniKayit.son_tarih=DateTime.Today.AddDays(15);
+            yeniKayit.durum = false;
             db.Kayitlar.Add(yeniKayit);
             db.SaveChanges();
             var kayitList = db.Kayitlar.ToList();

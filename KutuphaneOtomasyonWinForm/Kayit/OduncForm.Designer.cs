@@ -47,7 +47,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1350, 402);
+            this.dataGridView1.Size = new System.Drawing.Size(1362, 402);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -88,11 +88,11 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(584, 104);
+            this.dataGridView2.Location = new System.Drawing.Point(474, 105);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(766, 249);
+            this.dataGridView2.Size = new System.Drawing.Size(888, 265);
             this.dataGridView2.TabIndex = 5;
             // 
             // textBox1
