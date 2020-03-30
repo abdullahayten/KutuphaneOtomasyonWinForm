@@ -21,9 +21,13 @@ namespace KutuphaneOtomasyonWinForm.Kayit
 
         private void OduncForm_Load(object sender, EventArgs e)
         {
-            //listeledik
+            //listeledik(kayıtlar)
             var kayitList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayitList.ToList();
+
+            //listeledik(kaynaklar)
+            var kaynakList = db.Kaynaklar.ToList();
+            dataGridView2.DataSource = kaynakList.ToList();
 
             //istenmeyen kaynak ve kullanıcı kolonunu gizledik
             dataGridView1.Columns[6].Visible = false;
@@ -43,6 +47,13 @@ namespace KutuphaneOtomasyonWinForm.Kayit
                 label2.Text = kullaniciVarMi.kullanici_ad + " " + kullaniciVarMi.kullanici_soyad;
             else
                 label2.Text = "Böyle bir kullanıcı henüz yok";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string gelenAd = textBox1.Text;
+            var bulunanKaynaklar = db.Kaynaklar.Where(x => x.kaynak_ad.Contains(gelenAd)).ToList();
+            dataGridView2.DataSource = bulunanKaynaklar;
         }
     }
 }
