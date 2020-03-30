@@ -76,6 +76,12 @@
     <Compile Include="Kaynak\KaynakEkleForm.Designer.cs">
       <DependentUpon>KaynakEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kaynak\KaynakGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kaynak\KaynakGuncelleForm.Designer.cs">
+      <DependentUpon>KaynakGuncelleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kaynak\KaynakListeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kaynak\KaynakEkleForm.resx">
       <DependentUpon>KaynakEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kaynak\KaynakGuncelleForm.resx">
+      <DependentUpon>KaynakGuncelleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kaynak\KaynakListeForm.resx">
       <DependentUpon>KaynakListeForm.cs</DependentUpon>
