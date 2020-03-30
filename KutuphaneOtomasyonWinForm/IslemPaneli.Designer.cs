@@ -165,6 +165,7 @@
             this.ekleKaynakbtn.TabIndex = 5;
             this.ekleKaynakbtn.Text = "Ekle";
             this.ekleKaynakbtn.UseVisualStyleBackColor = false;
+            this.ekleKaynakbtn.Click += new System.EventHandler(this.ekleKaynakbtn_Click);
             // 
             // guncelleKaynakbtn
             // 
