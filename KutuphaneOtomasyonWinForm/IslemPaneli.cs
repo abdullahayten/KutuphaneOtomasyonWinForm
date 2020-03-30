@@ -99,5 +99,12 @@ namespace KutuphaneOtomasyonWinForm
             kEkle.MdiParent = this;
             kEkle.Show();
         }
+
+        private void silKaynakbtn_Click(object sender, EventArgs e)
+        {
+            KaynakSilForm kSil=new KaynakSilForm();
+            kSil.MdiParent = this;
+            kSil.Show();
+        }
     }
 }

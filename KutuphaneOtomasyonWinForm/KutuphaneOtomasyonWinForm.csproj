@@ -82,6 +82,12 @@
     <Compile Include="Kaynak\KaynakListeForm.Designer.cs">
       <DependentUpon>KaynakListeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kaynak\KaynakSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kaynak\KaynakSilForm.Designer.cs">
+      <DependentUpon>KaynakSilForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kullanicilar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kaynak\KaynakListeForm.resx">
       <DependentUpon>KaynakListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kaynak\KaynakSilForm.resx">
+      <DependentUpon>KaynakSilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\KullaniciEkleForm.resx">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
