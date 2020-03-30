@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KutuphaneOtomasyonWinForm.Kaynak;
 using KutuphaneOtomasyonWinForm.Kullanici;
 
 namespace KutuphaneOtomasyonWinForm
@@ -20,9 +21,15 @@ namespace KutuphaneOtomasyonWinForm
         KutuphaneOtomasyonEntities db=new KutuphaneOtomasyonEntities();
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
+            //kullanıcı butonları girişte kapalıdır. (ekle-guncelle-sil)
             ekleKullanicibtn.Visible = false;
             guncelleKullanicibtn.Visible = false;
             silKullanicibtn.Visible = false;
+
+            //kaynak butonları girişte kapalıdır. (ekle-guncelle-sil)
+            ekleKaynakbtn.Visible = false;
+            guncelleKaynakbtn.Visible = false;
+            silKaynakbtn.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,6 +71,26 @@ namespace KutuphaneOtomasyonWinForm
             KullaniciGuncelleForm kGuncel=new KullaniciGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ekleKaynakbtn.Visible == false)
+            {
+                ekleKaynakbtn.Visible = true;
+                guncelleKaynakbtn.Visible = true;
+                silKaynakbtn.Visible = true;
+            }
+            else
+            {
+                ekleKaynakbtn.Visible = false;
+                guncelleKaynakbtn.Visible = false;
+                silKaynakbtn.Visible = false;
+            }
+
+            KaynakListeForm kliste=new KaynakListeForm();
+            kliste.MdiParent = this;
+            kliste.Show();
         }
     }
 }

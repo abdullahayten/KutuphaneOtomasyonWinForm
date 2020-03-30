@@ -1,6 +1,6 @@
-﻿namespace KutuphaneOtomasyonWinForm
+﻿namespace KutuphaneOtomasyonWinForm.Kaynak
 {
-    partial class KullaniciListeForm
+    partial class KaynakListeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,20 +39,17 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1422, 747);
+            this.dataGridView1.Size = new System.Drawing.Size(1455, 771);
             this.dataGridView1.TabIndex = 0;
             // 
-            // KullaniciListeForm
+            // KaynakListeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1422, 747);
+            this.ClientSize = new System.Drawing.Size(1455, 771);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "KullaniciListeForm";
-            this.Text = "KullaniciListeForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.KullaniciListeForm_Load);
+            this.Name = "KaynakListeForm";
+            this.Text = "KaynakListeForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
