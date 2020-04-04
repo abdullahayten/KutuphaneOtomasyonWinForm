@@ -44,11 +44,25 @@ namespace KutuphaneOtomasyonWinForm.Kullanici
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
-            var kullanici = db.Kullanicilar.Where(x => x.kullanici_id == secilenId).FirstOrDefault();
-            db.Kullanicilar.Remove(kullanici);
-            db.SaveChanges();
-            Listele();
+            DialogResult silinsilMi = MessageBox.Show("Silmek İstediğinden Emin Misin? Geri Dönüş Yok...",
+                "Silme İşlemi", MessageBoxButtons.YesNo);
+
+            if (silinsilMi == DialogResult.Yes)
+            {
+                int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
+                var kullanici = db.Kullanicilar.Where(x => x.kullanici_id == secilenId).FirstOrDefault();
+                db.Kullanicilar.Remove(kullanici);
+                db.SaveChanges();
+                Listele();
+                MessageBox.Show("Silindi");
+            }
+            else
+            {
+                MessageBox.Show("Silme lazım olur...");
+            }
+
+
+            
         }
     }
 }
