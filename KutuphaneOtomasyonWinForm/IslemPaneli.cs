@@ -19,7 +19,7 @@ namespace KutuphaneOtomasyonWinForm
         {
             InitializeComponent();
         }
-        KutuphaneOtomasyonEntities db=new KutuphaneOtomasyonEntities();
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
             //kullanıcı butonları girişte kapalıdır. (ekle-guncelle-sil)
@@ -40,7 +40,7 @@ namespace KutuphaneOtomasyonWinForm
         private void button1_Click(object sender, EventArgs e)
         {
             if (ekleKullanicibtn.Visible == false)
-            {                
+            {
                 ekleKullanicibtn.Visible = true;
                 guncelleKullanicibtn.Visible = true;
                 silKullanicibtn.Visible = true;
@@ -57,23 +57,35 @@ namespace KutuphaneOtomasyonWinForm
             }
         }
 
+        private KullaniciEkleForm ekleForm;
+        private bool ekleKullaniciDurum = false;
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciEkleForm ekleForm=new KullaniciEkleForm();
-            ekleForm.MdiParent = this;
-            ekleForm.Show();
+            if (ekleKullaniciDurum == false)
+            {
+                ekleForm = new KullaniciEkleForm();
+                ekleForm.MdiParent = this;
+                ekleForm.Show();
+                ekleKullaniciDurum = true;
+            }
+            else
+            {
+                ekleForm.Close();
+                ekleKullaniciDurum = false;
+            }
+
         }
 
         private void silKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciSilForm kSil=new KullaniciSilForm();
+            KullaniciSilForm kSil = new KullaniciSilForm();
             kSil.MdiParent = this;
             kSil.Show();
         }
 
         private void guncelleKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciGuncelleForm kGuncel=new KullaniciGuncelleForm();
+            KullaniciGuncelleForm kGuncel = new KullaniciGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
         }
@@ -93,42 +105,42 @@ namespace KutuphaneOtomasyonWinForm
                 silKaynakbtn.Visible = false;
             }
 
-            KaynakListeForm kliste=new KaynakListeForm();
+            KaynakListeForm kliste = new KaynakListeForm();
             kliste.MdiParent = this;
             kliste.Show();
         }
 
         private void ekleKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakEkleForm kEkle=new KaynakEkleForm();
+            KaynakEkleForm kEkle = new KaynakEkleForm();
             kEkle.MdiParent = this;
             kEkle.Show();
         }
 
         private void silKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakSilForm kSil=new KaynakSilForm();
+            KaynakSilForm kSil = new KaynakSilForm();
             kSil.MdiParent = this;
             kSil.Show();
         }
 
         private void guncelleKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakGuncelleForm kGuncel=new KaynakGuncelleForm();
+            KaynakGuncelleForm kGuncel = new KaynakGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OduncForm odunc=new OduncForm();
+            OduncForm odunc = new OduncForm();
             odunc.MdiParent = this;
             odunc.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            GeriAlForm geri=new GeriAlForm();
+            GeriAlForm geri = new GeriAlForm();
             geri.MdiParent = this;
             geri.Show();
         }
