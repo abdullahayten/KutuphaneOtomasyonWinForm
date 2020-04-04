@@ -33,24 +33,28 @@ namespace KutuphaneOtomasyonWinForm
             silKaynakbtn.Visible = false;
         }
 
+        private KullaniciListeForm klisteForm;
+        /// <summary>
+        /// kullanıcı liste ve butonları açar
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             if (ekleKullanicibtn.Visible == false)
-            {
+            {                
                 ekleKullanicibtn.Visible = true;
                 guncelleKullanicibtn.Visible = true;
                 silKullanicibtn.Visible = true;
+                klisteForm = new KullaniciListeForm();
+                klisteForm.MdiParent = this;
+                klisteForm.Show();
             }
             else
             {
                 ekleKullanicibtn.Visible = false;
                 guncelleKullanicibtn.Visible = false;
                 silKullanicibtn.Visible = false;
+                klisteForm.Close();
             }
-
-            KullaniciListeForm klisteForm=new KullaniciListeForm();
-            klisteForm.MdiParent = this;
-            klisteForm.Show();
         }
 
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
