@@ -21,21 +21,25 @@ namespace KutuphaneOtomasyonWinForm.Kayit
 
         private void OduncForm_Load(object sender, EventArgs e)
         {
-            //listeledik(kayıtlar)
-            var kayitList = db.Kayitlar.ToList();
+
+            var kayitList = from kayit in db.Kayitlar 
+                select new {kayit.Kullanicilar.kullanici_ad,kayit.Kaynaklar.kaynak_ad,kayit.alis_tarih,kayit.son_tarih,kayit.durum};
+
+            ////listeledik(kayıtlar)
+            //var kayitList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayitList.ToList();
 
             //listeledik(kaynaklar)
             var kaynakList = db.Kaynaklar.ToList();
             dataGridView2.DataSource = kaynakList.ToList();
 
-            //istenmeyen kaynak ve kullanıcı kolonunu gizledik
-            dataGridView1.Columns[6].Visible = false;
-            dataGridView1.Columns[7].Visible = false;
+            ////istenmeyen kaynak ve kullanıcı kolonunu gizledik
+            //dataGridView1.Columns[6].Visible = false;
+            //dataGridView1.Columns[7].Visible = false;
 
-            //kolon adları duzenledik
-            dataGridView1.Columns[1].HeaderText = "Kullanıcı";
-            dataGridView1.Columns[2].HeaderText = "Kaynak Ad";
+            ////kolon adları duzenledik
+            //dataGridView1.Columns[1].HeaderText = "Kullanıcı";
+            //dataGridView1.Columns[2].HeaderText = "Kaynak Ad";
         }
 
         private void button1_Click(object sender, EventArgs e)
